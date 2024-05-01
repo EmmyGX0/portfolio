@@ -15,7 +15,7 @@ const TextTransition = ({children, className}: TextTransitionProps) => {
         whileInView="visible"
         className="bg-brand w-full h-full absolute z-20" 
         variants={variantsFigure}
-        viewport={{ once: true, margin: '-100px' }}
+        viewport={{ once: true }}
       ></motion.div>
       <motion.div
         initial="hidden"
@@ -23,7 +23,7 @@ const TextTransition = ({children, className}: TextTransitionProps) => {
         whileInView="visible"
         className={`${className}`}
         variants={variantsText}
-        viewport={{ once: true, margin: '-100px' }}
+        viewport={{ once: true }}
       >
         {children}
       </motion.div>

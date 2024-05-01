@@ -23,7 +23,7 @@ export const links = [
 
 export const variantsText = {
   hidden: {
-    y: 25,
+    y: 20,
     opacity: 0
   },
   visible: {

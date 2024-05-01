@@ -16,8 +16,9 @@ const ProjectCard = ({title, description, image, tech, url}: ProjectCardProps) =
     <motion.div 
       className="flex flex-col"
       initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
     >
       <motion.div className="rounded-lg w-full h-auto overflow-hidden relative flex justify-center aspect-video cursor-pointer group bg-brand-bgLight" >
         <div className="rounded-md aspect-video w-4/5 overflow-hidden group-hover:rotate-3 translate-y-14 group-hover:scale-110 transition-all duration-500">
