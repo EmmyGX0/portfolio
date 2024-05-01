@@ -8,22 +8,26 @@ type TextTransitionProps = {
 
 const TextTransition = ({children, className}: TextTransitionProps) => {
   return (
-    <>
-      <motion.figure 
-        className="bg-brand w-full h-full absolute" 
+    <div className='relative w-fit overflow-hidden'>
+      <motion.div 
+        initial="hidden"
+        // animate="visible"
+        whileInView="visible"
+        className="bg-brand w-full h-full absolute z-20" 
         variants={variantsFigure}
-        initial="hidden"
-        animate="visible"
-      />
+        viewport={{ once: true, margin: '-100px' }}
+      ></motion.div>
       <motion.div
-        variants={variantsText}
         initial="hidden"
-        animate="visible"
+        // animate="visible"
+        whileInView="visible"
         className={`${className}`}
+        variants={variantsText}
+        viewport={{ once: true, margin: '-100px' }}
       >
         {children}
       </motion.div>
-    </>
+    </div>
   )
 }
 
