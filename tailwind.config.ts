@@ -8,10 +8,11 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      md2: '860px'
-    },
     extend: {
+      screens: {
+        xs: '375px',
+        md2: '860px'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -21,6 +22,7 @@ const config: Config = {
         brand: {
           DEFAULT: "#6E40C9",
           background: "#111",
+          bgLight: "#232323",
           sidebarBg: "#080808",
           sub: "#848d97",
           text: '#e6edf3'
