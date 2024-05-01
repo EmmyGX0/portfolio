@@ -6,6 +6,28 @@
 
 *{box-sizing: border-box;}
 
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding-top: 100px; /* Ajusta este valor según la altura de tu navbar */
+  margin-top: -100px; /* Debe ser el mismo valor que padding-top pero negativo */
+}
+
+@media (max-width: 768px) {
+  .navbar-desktop {
+    display: none; /* Oculta el Navbar en pantallas pequeñas */
+  }
+}
+
+/* Estilo para pantallas mayores a 768px, asegura que el Navbar se muestre */
+@media (min-width: 769px) {
+  .navbar-desktop {
+    display: block; /* Asegura que el Navbar se muestre en pantallas grandes */
+  }
+}
+
 .sidebar {
   height: 100vh;
   position: sticky;
