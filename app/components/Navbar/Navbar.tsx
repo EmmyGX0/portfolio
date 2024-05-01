@@ -9,7 +9,7 @@ type NavbarProps = {
 const Navbar = ({section}: NavbarProps) => {
 
   return (
-    <nav className="bg-brand-sidebarBg sidebar w-16 font-montserrat">
+    <nav className="bg-brand-sidebarBg sidebar w-16 font-montserrat hidden md:block">
       {links.map(link => (
         <a
           key={link.name}

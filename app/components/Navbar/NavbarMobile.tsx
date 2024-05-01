@@ -6,7 +6,7 @@ import { links } from "@/lib/data"
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
-    <div className="sticky w-full h-16 items-center top-0 z-50">
+    <div className="sticky w-full h-16 items-center top-0 z-50 md:hidden">
       <div className="w-full h-full flex flex-col bg-brand-sidebarBg relative">
         <div className="flex w-full h-full justify-end items-center">
           <IoMenu 
