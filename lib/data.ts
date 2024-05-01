@@ -23,7 +23,7 @@ export const links = [
 
 export const variantsText = {
   hidden: {
-    y: 50,
+    y: 25,
     opacity: 0
   },
   visible: {
@@ -100,4 +100,28 @@ export const technologies = [
   {
     name: 'GitHub',
   },
+]
+
+export const projects = [
+  {
+    title: 'We Book You landing page',
+    description: 'This is the landing page for We Book You, an all-in-one corporate travel platform that allows the planning and self-management of all types of trips with destinations worldwide. With We Book You you can book flights, hotels and rent cars from a single platform, wherever you are.',
+    image: '/images/WBY_landing_page.png',
+    tech: 'NextJS - ReactJS - Framer Motion - React i18next',
+    url: 'https://webookyou.com/'
+  },
+  {
+    title: 'CarHub',
+    description: 'A fully responsive car rental showcase using NextJS, with an advanced search and filtering functionality.',
+    image: '/images/CarHub.png',
+    tech: 'NextJS - ReactJS - Typescript',
+    url: 'https://car-showcase-lake-eight.vercel.app/'
+  },
+  {
+    title: 'Imaginify',
+    description: 'A fully responsive Service as a Software application with AI features, credits and payment system. You can restore images, fill, remove objects, recolor and even remove the background.',
+    image: '/images/Imaginify.png',
+    tech: 'NextJS - ReactJS - Typescript - Clerk - TailwindCSS - Shadcn - MongoDB - Stripe',
+    url: 'https://imaginify-mu-olive.vercel.app/'
+  }
 ]
