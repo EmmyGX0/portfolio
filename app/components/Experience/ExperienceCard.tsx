@@ -7,9 +7,12 @@ const ExperienceCard = () => {
     <>
       <motion.div
         className="rounded-lg bg-[#161b22] z-20 shadow-sm shadow-[#161b22] p-4 font-montserrat"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{  margin: '-200px' }}
+        transition={{ duration: 0.4 }}
+        onViewportEnter={() => console.log('Entrando card')}
+        onViewportLeave={() => console.log('Saliendo card')}
       >
         <div className="flex items-center gap-4 tracking-wide">
           <div className="relative rounded-full p-2">
