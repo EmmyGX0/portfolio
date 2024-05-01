@@ -1,37 +1,34 @@
 'use client'
-import { IoCodeSharp } from "react-icons/io5"
-import { motion } from "framer-motion"
+import Button from "../Common/Button"
+import TextTransition from "../Common/TextTransition"
 
 const Hero = () => {
+
   return (
-    <div className="w-full pt-56 flex gap-10">
-      <div className="flex justify-center text-brand-text items-center p-1 relative">
-        <motion.span 
-          className="rounded-full bg-brand/25 p-2"
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <IoCodeSharp size={30} />
-        </motion.span>
-      </div>
-      <div className="flex flex-col gap-5">
-        <motion.span 
-          className="text-brand-text font-bold text-8xl tracking-wide"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Hi there!
-        </motion.span>
-        <motion.span 
-          className="text-brand-sub text-xl font-light tracking-wider"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          I am a Software Engineer, scroll down to get to know me!
-        </motion.span>
+    <div className="w-full flex gap-10 h-screen pb-20">
+      <div className="flex flex-col justify-center gap-5">
+        <div className="flex flex-col gap-2">
+          <span className="text-brand-text font-bold text-8xl tracking-wide relative overflow-hidden">
+            <TextTransition>
+              Hi there<span className="text-brand">!</span>
+            </TextTransition>
+          </span>
+          <span className="text-brand-text w-fit text-2xl font-light tracking-wider relative overflow-hidden">
+            <TextTransition>
+              I am a <label className="text-brand">Software Engineer</label>
+            </TextTransition>
+          </span>
+        </div>
+        <span className="text-brand-sub text-xl font-light w-[448px] tracking-wider relative overflow-hidden">
+          <TextTransition>
+            I&apos;ve been developing web applications for over 2 years, scroll down to get to know me!
+          </TextTransition>
+        </span>
+        <div className="relative w-fit overflow-hidden">
+          <TextTransition>
+            <Button text='Contact me' />
+          </TextTransition>
+        </div>
       </div>
     </div>
   )
