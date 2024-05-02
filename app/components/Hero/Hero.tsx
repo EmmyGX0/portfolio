@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="text-brand-text text-lg sm:text-xl md:text-2xl font-light tracking-wider">
             <TextTransition className="flex">
               <h2>
-                I am a <span className="text-brand">Software Engineer</span>
+                I am a <span className="text-brand font-bold">Software Engineer</span>
               </h2>
             </TextTransition>
           </div>

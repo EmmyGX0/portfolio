@@ -6,12 +6,12 @@ const Experience = () => {
   return (
     <motion.div id="experience" className="flex flex-col w-full pb-20 section">
       <div className="w-full overflow-hidden flex items-center gap-4">
-        <figure className="w-full h-[1px] bg-white opacity-30" />
         <div>
           <TextTransition>
             <h1 className="text-brand-text font-bold text-4xl md:text-5xl">Experience<span className="text-brand">.</span></h1>
           </TextTransition>
         </div>
+        <figure className="w-full h-[1px] bg-white opacity-30" />
       </div>
       <div className='flex flex-col mt-5'>
         <div className='flex justify-between flex-wrap'>
@@ -32,7 +32,7 @@ const Experience = () => {
               Frontend Developer
             </TextTransition>
           </label>
-          <label className='text-brand-sub  text-base md:text-lg'>
+          <label className='text-brand-sub text-base md:text-lg'>
             <TextTransition>
               Remote
             </TextTransition>
@@ -40,7 +40,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className='text-brand-sub text-lg md:text-xl mt-2'>
+      <div className='text-brand-sub font-light text-base md:text-lg mt-2'>
         <div>
           <TextTransition>
             As a front-end developer, my role is to enhance the user experience through the implementation of new features and the improvement of components.

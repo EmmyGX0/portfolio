@@ -32,23 +32,23 @@ const ProjectCard = ({title, description, image, tech, url}: ProjectCardProps) =
           </div>
         </div>
       </motion.div>
-      <div className="mt-4 flex flex-col gap-2">
+      <div className="mt-4 flex flex-col gap-2 text-base md:text-lg">
         <TextTransition>
           <h2 className="font-bold text-brand-text text-xl md:text-2xl">
             {title}
           </h2>
         </TextTransition>
         <TextTransition>
-          <label className="text-brand text-lg md:text-xl">
+          <label className="text-brand font-semibold">
             {tech}
           </label>
         </TextTransition>
         <TextTransition>
-          <div className="text-lg md:text-xl text-brand-sub font-light">
+          <div className="text-brand-sub font-light">
             {description}
           </div>
         </TextTransition>
-        <TextTransition>
+        <TextTransition className="mt-2">
           <Button text="Check it out!" url={url} />
         </TextTransition>
       </div>

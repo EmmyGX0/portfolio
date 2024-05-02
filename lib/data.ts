@@ -107,7 +107,7 @@ export const projects = [
     title: 'We Book You landing page',
     description: 'This is the landing page for We Book You, an all-in-one corporate travel platform that allows the planning and self-management of all types of trips with destinations worldwide. With We Book You you can book flights, hotels and rent cars from a single platform, wherever you are.',
     image: '/images/WBY_landing_page.png',
-    tech: 'NextJS - ReactJS - Framer Motion - React i18next',
+    tech: 'NextJS - ReactJS - Framer Motion - I18Next',
     url: 'https://webookyou.com/'
   },
   {
