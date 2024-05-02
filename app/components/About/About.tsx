@@ -12,20 +12,20 @@ const About = () => {
         </div>
         <figure className="w-full h-[1px] bg-white opacity-30" />
       </div>
-      <div className='grid grid-cols-1 gap-6 mt-5 text-brand-sub text-lg md:text-xl font-light'>
+      <div className='grid grid-cols-1 gap-6 mt-5 text-brand-sub text-base md:text-lg font-light'>
         <div className='flex gap-2 flex-col'>
           <div className='relative overflow-hidden'>
-            <TextTransition className='flex items-center gap-4'>
-              Hey! my name is Emmanuel Luna González, a Mexican mechatronics engineer that found 
-              his passion in the world of web development! My priority is to make visually 
+            <TextTransition className='inline-block items-center gap-4 flex-row'>
+              Hey! my name is <span className='text-brand font-semibold'>Emmanuel Luna González</span>, a Mexican mechatronics engineer that found 
+              his passion in the world of <span className='text-brand font-semibold'>web development!</span> My priority is to make visually 
               apealing but also well crafted and functional websites.
             </TextTransition>
           </div>
           <div className='relative overflow-hidden'>
-            <TextTransition className='flex items-center gap-4'>
-              I specialize on the frontend side of web development (ReactJS, NextJS),
+            <TextTransition className='inline-block items-center gap-4'>
+              I specialize on the <span className='text-brand font-semibold'>frontend</span> side of web development (ReactJS, NextJS),
               using Redux and Zustand for state management,
-              I also have experience working with backend technologies 
+              I also have experience working with <span className='text-brand font-semibold'>backend</span> technologies 
               (Node.js, Express.js, Python, FastAPI and GO). But love building with whatever tools 
               are necessary to get the job done.
             </TextTransition>

@@ -6,8 +6,9 @@ type Props = {
 
 const Button = ({text, type, url}: Props) => {
   const handleClick = () => {
+    const contactSection = document.getElementById('contact')
     if (type === 'contact') {
-      window.open("mailto:emmanuel.lifeg@outlook.com", '_blank')
+      contactSection?.scrollIntoView({behavior: 'smooth'})
       return
     }
     window.open(url, '_blank')
